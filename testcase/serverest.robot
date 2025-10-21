@@ -45,3 +45,10 @@ CN02_CT03 – Cadastrar um novo usuario
     WHEN inicio um cadastro de um novo usuario
     AND enviar a cadastro
     THEN o sistema apresenta a lista de usuarios
+
+CN02_CT03 – Pesquisar um produto 
+    [Tags]    Pesquisar
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto 
+    THEN o sistema apresenta o produto pesquisado 
+    

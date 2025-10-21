@@ -16,6 +16,13 @@ Library    OperatingSystem
 
 *** Keywords ***
 Abrir Navegador
+    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage 
+    Call Method    ${chrome_options}    add_argument    --disable-logging
+    Call Method    ${chrome_options}    add_argument    --silent
+    ${options}=     Call Method     ${chrome_options}    to_capabilities
+    ${EXCLUDES}    Create list     enable-logging
+    Call Method    ${chrome_options}    add_experimental_option    excludeSwitches  ${EXCLUDES}
     Open Browser    ${url.serverest}     ${url.BROWSER}
     Set Window Size     1400    1080
  

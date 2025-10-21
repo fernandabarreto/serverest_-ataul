@@ -21,7 +21,7 @@ preencher formulario de cadastro de produto
     Input Text       ${cadastroProduto.descricaoProduto}      ${descricao}[0:20]
     Input Text       ${cadastroProduto.qtProduto}             2
 anexar arquivo
-    Sleep    03
+    Sleep    01
     Caminho do arquivo        #Esse é o caminho do arquivo está no global.robot e todas as vezes eu tenho que chamar antes de mandar upoload do arquivo
     Choose File     ${anexo.uploadAnexo}    ${caminhoRelatorio} 
 enviar o cadastro do produto
@@ -36,7 +36,7 @@ validar cadastro do produto
 
 listar usuarios cadastrados 
     Click Element   ${usuariosMenu.btnListarUsuarios}
-    Sleep    05
+    Sleep    01
 
 validar lista de usuarios
     [Arguments]    ${validatexto}
@@ -57,4 +57,14 @@ preencher formulario de cadastro usuario
     
  enviar o cadastro do usuario   
      Click Element    ${usuariosMenu.btnUsuario}
-     Sleep    05
+     #Sleep    05
+adiciono um dado para a pesquisa
+    Input Text      ${pesquisa.campoTexto}   ${pesquisa.texto}
+clicar no botao
+    Click Button    ${pesquisa.btnPesquisar}
+    Sleep    02
+validar produto pesquisado
+    [Arguments]    ${validatexto}
+
+    ${texto}     Get Text    css=h5
+    Should Be Equal As Strings    ${texto}   ${validatexto}  

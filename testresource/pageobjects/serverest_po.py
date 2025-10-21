@@ -28,4 +28,9 @@ class usuariosMenu:
     emailUsuario =    "//input[@id='email']"
     passwordUsuario =  "//input[@id='password']"
     btnUsuario = "css:button[data-testid='cadastrarUsuario']"
+
+class pesquisa:
+    btnPesquisar = "css:button[data-testid='botaoPesquisar']"
+    campoTexto = "css:input[data-testid='pesquisar']"
+    texto = "Frozen Bamboo Chicken"
     
