@@ -31,4 +31,4 @@ pesquiso um produto
     adiciono um dado para a pesquisa
     clicar no botao
 o sistema apresenta o produto pesquisado 
-    validar produto pesquisado        Frozen Bamboo Chicken
+    validar produto pesquisado       Produto QA Elegant Soft Soap
