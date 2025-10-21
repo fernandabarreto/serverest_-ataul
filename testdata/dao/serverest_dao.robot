@@ -5,6 +5,8 @@ Variables   ../../resources/commons/properties.py
 Library    Screenshot
 Library     FakerLibrary        locale=pt_BR
 Library    String
+Library    XML
+
 
 
 *** Keywords ***
@@ -26,8 +28,33 @@ enviar o cadastro do produto
     Click Element         ${cadastroProduto.btnCadastrarProduto}   
     Sleep    02
 validar cadastro do produto
-    #Esse valida passando o valor como uma variavel, o valor deve ser informando na service.robot 
+    #Esse valida passando o valor como uma variavel, o valor deve ser informando na service.robot, variavel dinamica  ${expected_text}
 
     [Arguments]    ${expected_text}
     ${validaNome}    Get Text    xpath=//td[text()='${expected_text}']
     Should Be Equal As Strings    ${validaNome}    ${expected_text}
+
+listar usuarios cadastrados 
+    Click Element   ${usuariosMenu.btnListarUsuarios}
+    Sleep    05
+
+validar lista de usuarios
+    [Arguments]    ${validatexto}
+
+    ${texto}     Get Text    css=h1
+    Should Be Equal As Strings    ${texto}   ${validatexto}  
+
+     
+preencher formulario de cadastro usuario
+    ${nome}        FakerLibrary.Name
+    ${email}      FakerLibrary.Email
+
+    Click Element    ${usuariosMenu.btnCadastrarUsuario}
+    Input Text     ${usuariosMenu.nomeUsuario}    ${nome} 
+    Input Text     ${usuariosMenu.emailUsuario}    ${email}
+    Input Text     ${usuariosMenu.passwordUsuario}     ${loginPO.password}
+    
+    
+ enviar o cadastro do usuario   
+     Click Element    ${usuariosMenu.btnUsuario}
+     Sleep    05

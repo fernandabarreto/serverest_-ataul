@@ -21,5 +21,11 @@ class cadastroProduto:
 class anexo:
     uploadAnexo =        "//input[@data-testid='imagem']"
 
-
+class usuariosMenu:
+    btnListarUsuarios   =  "css:a[data-testid='listar-usuarios']"
+    btnCadastrarUsuario = "css:a[data-testid='cadastrar-usuarios']"
+    nomeUsuario = "//input[@id='nome']"
+    emailUsuario =    "//input[@id='email']"
+    passwordUsuario =  "//input[@id='password']"
+    btnUsuario = "css:button[data-testid='cadastrarUsuario']"
     

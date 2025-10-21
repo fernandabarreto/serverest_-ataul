@@ -16,4 +16,14 @@ inserir os documentos necessários
 enviar a solicitação    
     enviar o cadastro do produto
 o sistema redireciona para a tela de listagem de produtos
-    validar cadastro do produto     Distinctio autem exp
+    validar cadastro do produto     Smartphone TesteQA 3
+
+listar usuarios cadastrados no sistema 
+    listar usuarios cadastrados 
+o sistema apresenta a lista de usuarios
+    validar lista de usuarios       Lista dos usuários      
+
+inicio um cadastro de um novo usuario
+    preencher formulario de cadastro usuario
+enviar a cadastro
+    enviar o cadastro do usuario

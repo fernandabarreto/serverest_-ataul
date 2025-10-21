@@ -31,3 +31,17 @@ CN02_CT01 – Cadastrar um produto
     AND inserir os documentos necessários
     AND enviar a solicitação 
     THEN o sistema redireciona para a tela de listagem de produtos
+
+CN02_CT02 – Cadastrar um produto listar cadastro de usuarios 
+    [Tags]    Lista
+     GIVEN que faço login no sistema      ${PERFIL.ANALISTA}
+     WHEN listar usuarios cadastrados no sistema
+     THEN o sistema apresenta a lista de usuarios
+    
+
+CN02_CT03 – Cadastrar um novo usuario
+    [Tags]    Usuario
+    GIVEN que faço login no sistema     ${PERFIL.GERENTE}
+    WHEN inicio um cadastro de um novo usuario
+    AND enviar a cadastro
+    THEN o sistema apresenta a lista de usuarios
