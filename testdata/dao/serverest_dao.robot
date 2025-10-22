@@ -68,3 +68,12 @@ validar produto pesquisado
 
     ${texto}     Get Text    css=h5
     Should Be Equal As Strings    ${texto}   ${validatexto}  
+
+clicar no botão adicionar na lista  
+    Click Element    ${pesquisa.btnLista}
+
+validar lista de compras
+    [Arguments]    ${validatexto}
+
+    ${texto}     Get Text    css=h1
+    Should Be Equal As Strings    ${texto}   ${validatexto}  

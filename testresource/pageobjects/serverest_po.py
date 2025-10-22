@@ -32,5 +32,6 @@ class usuariosMenu:
 class pesquisa:
     btnPesquisar = "css:button[data-testid='botaoPesquisar']"
     campoTexto = "css:input[data-testid='pesquisar']"
-    texto = "Frozen Bamboo Chicken"
+    texto = "Produto QA Elegant Soft Soap"
+    btnLista = "//button[@data-testid='adicionarNaLista']"
     

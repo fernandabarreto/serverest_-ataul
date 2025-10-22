@@ -32,3 +32,9 @@ pesquiso um produto
     clicar no botao
 o sistema apresenta o produto pesquisado 
     validar produto pesquisado       Produto QA Elegant Soft Soap
+
+adicionar na lista de compra 
+    clicar no botão adicionar na lista 
+o sistema apresenta a lista de compras
+    validar lista de compras     Lista de Compras
+    

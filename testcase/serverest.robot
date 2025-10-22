@@ -46,9 +46,15 @@ CN02_CT03 – Cadastrar um novo usuario
     AND enviar a cadastro
     THEN o sistema apresenta a lista de usuarios
 
-CN02_CT03 – Pesquisar um produto 
+CN02_CT04 – Pesquisar um produto 
     [Tags]    Pesquisar
     GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
     WHEN pesquiso um produto 
     THEN o sistema apresenta o produto pesquisado 
     
+CN02_CT05 – Adicionar na lista de compras
+    [Tags]    Compra
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto
+    AND adicionar na lista de compra 
+    THEN o sistema apresenta a lista de compras
