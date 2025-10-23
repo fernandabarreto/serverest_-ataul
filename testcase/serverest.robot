@@ -58,3 +58,18 @@ CN02_CT05 – Adicionar na lista de compras
     WHEN pesquiso um produto
     AND adicionar na lista de compra 
     THEN o sistema apresenta a lista de compras
+CN02_CT06 – Aumentar a quantidade de produto 
+    [Tags]    Qt
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto
+    AND adicionar na lista de compra 
+    AND o sistema apresenta a lista de compras
+    THEN aumentar a quantidade de produto na lista
+
+CN02_CT07 - Adicionar oa carrinho 
+    [Tags]    Carrinho
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto
+    AND adicionar na lista de compra 
+    AND o sistema apresenta a lista de compras
+    THEN adicionar oa carrinho de compras

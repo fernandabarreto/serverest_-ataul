@@ -31,10 +31,14 @@ pesquiso um produto
     adiciono um dado para a pesquisa
     clicar no botao
 o sistema apresenta o produto pesquisado 
-    validar produto pesquisado       Produto QA Elegant Soft Soap
+    validar produto pesquisado       Ergonomic Metal Cheese
 
 adicionar na lista de compra 
     clicar no botão adicionar na lista 
 o sistema apresenta a lista de compras
     validar lista de compras     Lista de Compras
-    
+
+aumentar a quantidade de produto na lista  
+    aumentar a quantidade de produto  
+adicionar oa carrinho de compras 
+    adicionar oa carrinho

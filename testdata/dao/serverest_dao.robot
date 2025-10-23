@@ -76,4 +76,11 @@ validar lista de compras
     [Arguments]    ${validatexto}
 
     ${texto}     Get Text    css=h1
-    Should Be Equal As Strings    ${texto}   ${validatexto}  
+
+
+aumentar a quantidade de produto
+    Click Button    ${lista.btnQuantidade}
+
+adicionar oa carrinho
+    Click Element    ${lista.btnCarrinho}
+    

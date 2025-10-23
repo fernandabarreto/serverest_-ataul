@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-10-21T21:09:59.637261" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-10-23T10:06:19.281121" rpa="false" schemaversion="5">
 <suite id="s1" name="Serverest" source="C:\serverest\testcase\serverest.robot">
-<test id="s1-t1" name="CN02_CT05 – Adicionar na lista de compras" line="55">
+<test id="s1-t1" name="CN02_CT07 - Adicionar oa carrinho" line="69">
 <kw name="Abrir Navegador" owner="global" type="SETUP">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-10-21T21:10:01.689520" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000167661697F0&gt;</msg>
+<msg time="2025-10-23T10:06:21.115760" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002552C2B97F0&gt;</msg>
 <var>${chrome_options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.688886" elapsed="0.000732"/>
+<status status="PASS" start="2025-10-23T10:06:21.114964" elapsed="0.000881"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.689959" elapsed="0.000313"/>
+<status status="PASS" start="2025-10-23T10:06:21.116178" elapsed="0.000293"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-logging</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.690550" elapsed="0.000285"/>
+<status status="PASS" start="2025-10-23T10:06:21.116720" elapsed="0.000259"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
 <arg>add_argument</arg>
 <arg>--silent</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.691096" elapsed="0.000273"/>
+<status status="PASS" start="2025-10-23T10:06:21.117188" elapsed="0.000232"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
-<msg time="2025-10-21T21:10:01.691999" level="INFO">${options} = {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'goog:chromeOptions': {'extensions': [], 'args': ['--disable-dev-shm-usage', '--disable-logging', '--silent']}}</msg>
+<msg time="2025-10-23T10:06:21.117938" level="INFO">${options} = {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'goog:chromeOptions': {'extensions': [], 'args': ['--disable-dev-shm-usage', '--disable-logging', '--silent']}}</msg>
 <var>${options}</var>
 <arg>${chrome_options}</arg>
 <arg>to_capabilities</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.691650" elapsed="0.000421"/>
+<status status="PASS" start="2025-10-23T10:06:21.117629" elapsed="0.000371"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-10-21T21:10:01.692572" level="INFO">${EXCLUDES} = ['enable-logging']</msg>
+<msg time="2025-10-23T10:06:21.118429" level="INFO">${EXCLUDES} = ['enable-logging']</msg>
 <var>${EXCLUDES}</var>
 <arg>enable-logging</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.692330" elapsed="0.000302"/>
+<status status="PASS" start="2025-10-23T10:06:21.118209" elapsed="0.000278"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${chrome_options}</arg>
@@ -53,22 +53,22 @@
 <arg>excludeSwitches</arg>
 <arg>${EXCLUDES}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.692952" elapsed="0.000406"/>
+<status status="PASS" start="2025-10-23T10:06:21.118685" elapsed="0.000264"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:01.695707" level="INFO">Opening browser 'Chrome' to base url 'https://front.serverest.dev/login'.</msg>
+<msg time="2025-10-23T10:06:21.120596" level="INFO">Opening browser 'Chrome' to base url 'https://front.serverest.dev/login'.</msg>
 <arg>${url.serverest}</arg>
 <arg>${url.BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-21T21:10:01.693705" elapsed="4.595882"/>
+<status status="PASS" start="2025-10-23T10:06:21.119208" elapsed="3.319475"/>
 </kw>
 <kw name="Set Window Size" owner="SeleniumLibrary">
 <arg>1400</arg>
 <arg>1080</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-10-21T21:10:06.290070" elapsed="0.393622"/>
+<status status="PASS" start="2025-10-23T10:06:24.439559" elapsed="1.156442"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:01.685081" elapsed="4.998970"/>
+<status status="PASS" start="2025-10-23T10:06:21.108241" elapsed="4.488159"/>
 </kw>
 <kw name="GIVEN que faço login no sistema" owner="serverest_service">
 <kw name="Logar no sistema" owner="global">
@@ -79,7 +79,7 @@
 <arg>Logar no sistema</arg>
 <arg>${PERFIL.CLIENTE}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-21T21:10:06.689357" elapsed="0.000305"/>
+<status status="PASS" start="2025-10-23T10:06:25.602787" elapsed="0.000287"/>
 </kw>
 <arg>"${PERFIL}" == "GERENTE"</arg>
 <arg>Logar no sistema</arg>
@@ -90,7 +90,7 @@
 <arg>Logar no sistema</arg>
 <arg>${PERFIL.CLIENTE}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-21T21:10:06.688874" elapsed="0.000933"/>
+<status status="PASS" start="2025-10-23T10:06:25.602334" elapsed="0.000915"/>
 </kw>
 <arg>"${PERFIL}" == "ANALISTA"</arg>
 <arg>Logar no sistema</arg>
@@ -106,149 +106,155 @@
 <arg>Logar no sistema</arg>
 <arg>${PERFIL.CLIENTE}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-21T21:10:06.688320" elapsed="0.001623"/>
+<status status="PASS" start="2025-10-23T10:06:25.601755" elapsed="0.001801"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T21:10:08.691318" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-10-23T10:06:27.605051" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T21:10:06.690208" elapsed="2.001334"/>
+<status status="PASS" start="2025-10-23T10:06:25.604016" elapsed="2.001302"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${loginPO.campoEmail}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-21T21:10:08.691961" elapsed="0.049699"/>
+<status status="PASS" start="2025-10-23T10:06:27.605860" elapsed="0.060827"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:08.743103" level="INFO">Typing text 'cliente@gmail.com' into text field '//input[@id='email']'.</msg>
+<msg time="2025-10-23T10:06:27.669160" level="INFO">Typing text 'cliente@gmail.com' into text field '//input[@id='email']'.</msg>
 <arg>${loginPO.campoEmail}</arg>
 <arg>${PERFIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:08.742003" elapsed="0.319993"/>
+<status status="PASS" start="2025-10-23T10:06:27.667288" elapsed="0.286507"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:09.066125" level="INFO">Typing text 'Banana1234' into text field '//input[@id='password']'.</msg>
+<msg time="2025-10-23T10:06:27.957898" level="INFO">Typing text 'Banana1234' into text field '//input[@id='password']'.</msg>
 <arg>${loginPO.campoPassword}</arg>
 <arg>${loginPO.password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:09.062615" elapsed="0.295504"/>
+<status status="PASS" start="2025-10-23T10:06:27.954336" elapsed="0.195988"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:09.360512" level="INFO">Clicking element 'css=button[type=submit]'.</msg>
+<msg time="2025-10-23T10:06:28.152442" level="INFO">Clicking element 'css=button[type=submit]'.</msg>
 <arg>${loginPO.btnEntrar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:09.358741" elapsed="0.331210"/>
+<status status="PASS" start="2025-10-23T10:06:28.150865" elapsed="0.161530"/>
 </kw>
 <arg>${PERFIL}</arg>
-<status status="PASS" start="2025-10-21T21:10:06.687716" elapsed="3.002632"/>
+<status status="PASS" start="2025-10-23T10:06:25.600914" elapsed="2.711875"/>
 </kw>
 <kw name="validar o acesso" owner="global">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T21:10:14.693152" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-10-23T10:06:33.315324" level="INFO">Slept 5 seconds.</msg>
 <arg>05</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T21:10:09.691939" elapsed="5.001391"/>
+<status status="PASS" start="2025-10-23T10:06:28.314786" elapsed="5.000740"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:14.705850" level="INFO">Page title is 'Front - ServeRest'.</msg>
+<msg time="2025-10-23T10:06:33.324607" level="INFO">Page title is 'Front - ServeRest'.</msg>
 <arg>Front - ServeRest</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-10-21T21:10:14.693672" elapsed="0.012350"/>
+<status status="PASS" start="2025-10-23T10:06:33.315838" elapsed="0.008989"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:09.690946" elapsed="5.015238"/>
+<status status="PASS" start="2025-10-23T10:06:28.313806" elapsed="5.011263"/>
 </kw>
 <arg>${PERFIL.CLIENTE}</arg>
-<status status="PASS" start="2025-10-21T21:10:06.685046" elapsed="8.021246"/>
+<status status="PASS" start="2025-10-23T10:06:25.597986" elapsed="7.727256"/>
 </kw>
 <kw name="WHEN pesquiso um produto" owner="serverest_service">
 <kw name="adiciono um dado para a pesquisa" owner="serverest_dao">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:14.710680" level="INFO">Typing text 'Produto QA Elegant Soft Soap' into text field 'css:input[data-testid='pesquisar']'.</msg>
+<msg time="2025-10-23T10:06:33.329614" level="INFO">Typing text 'Ergonomic Metal Cheese' into text field 'css:input[data-testid='pesquisar']'.</msg>
 <arg>${pesquisa.campoTexto}</arg>
 <arg>${pesquisa.texto}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:14.709025" elapsed="0.638588"/>
+<status status="PASS" start="2025-10-23T10:06:33.327863" elapsed="0.275233"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:14.707564" elapsed="0.640789"/>
+<status status="PASS" start="2025-10-23T10:06:33.327178" elapsed="0.276931"/>
 </kw>
 <kw name="clicar no botao" owner="serverest_dao">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:15.351563" level="INFO">Clicking button 'css:button[data-testid='botaoPesquisar']'.</msg>
+<msg time="2025-10-23T10:06:33.607240" level="INFO">Clicking button 'css:button[data-testid='botaoPesquisar']'.</msg>
 <arg>${pesquisa.btnPesquisar}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:15.349829" elapsed="0.245830"/>
+<status status="PASS" start="2025-10-23T10:06:33.605576" elapsed="0.242851"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T21:10:17.597095" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-10-23T10:06:35.850118" level="INFO">Slept 2 seconds.</msg>
 <arg>02</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T21:10:15.596137" elapsed="2.001155"/>
+<status status="PASS" start="2025-10-23T10:06:33.849137" elapsed="2.001218"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:15.348934" elapsed="2.248534"/>
+<status status="PASS" start="2025-10-23T10:06:33.604730" elapsed="2.245866"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:14.706900" elapsed="2.890678"/>
+<status status="PASS" start="2025-10-23T10:06:33.326023" elapsed="2.524738"/>
 </kw>
 <kw name="AND adicionar na lista de compra" owner="serverest_service">
 <kw name="clicar no botão adicionar na lista" owner="serverest_dao">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:17.602044" level="INFO">Clicking element '//button[@data-testid='adicionarNaLista']'.</msg>
+<msg time="2025-10-23T10:06:35.855617" level="INFO">Clicking element '//button[@data-testid='adicionarNaLista']'.</msg>
 <arg>${pesquisa.btnLista}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:17.600798" elapsed="0.150194"/>
+<status status="PASS" start="2025-10-23T10:06:35.854140" elapsed="0.243576"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:17.598945" elapsed="0.152404"/>
+<status status="PASS" start="2025-10-23T10:06:35.853225" elapsed="0.244823"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:17.598283" elapsed="0.153332"/>
+<status status="PASS" start="2025-10-23T10:06:35.851560" elapsed="0.246694"/>
 </kw>
-<kw name="THEN o sistema apresenta a lista de compras" owner="serverest_service">
+<kw name="AND o sistema apresenta a lista de compras" owner="serverest_service">
 <kw name="validar lista de compras" owner="serverest_dao">
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:17.805245" level="INFO">${texto} = Lista de Compras</msg>
+<msg time="2025-10-23T10:06:36.170551" level="INFO">${texto} = Lista de Compras</msg>
 <var>${texto}</var>
 <arg>css=h1</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T21:10:17.756557" elapsed="0.048833"/>
-</kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${texto}</arg>
-<arg>${validatexto}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-10-21T21:10:17.805753" elapsed="0.000433"/>
+<status status="PASS" start="2025-10-23T10:06:36.102835" elapsed="0.067882"/>
 </kw>
 <arg>Lista de Compras</arg>
-<status status="PASS" start="2025-10-21T21:10:17.755705" elapsed="0.050645"/>
+<status status="PASS" start="2025-10-23T10:06:36.101913" elapsed="0.069134"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:17.752640" elapsed="0.053842"/>
+<status status="PASS" start="2025-10-23T10:06:36.101060" elapsed="0.070239"/>
+</kw>
+<kw name="THEN adicionar oa carrinho de compras" owner="serverest_service">
+<kw name="adicionar oa carrinho" owner="serverest_dao">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T10:06:36.177576" level="INFO">Clicking element 'css:button[data-testid='adicionar carrinho']'.</msg>
+<arg>${lista.btnCarrinho}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T10:06:36.175610" elapsed="0.159525"/>
+</kw>
+<status status="PASS" start="2025-10-23T10:06:36.174737" elapsed="0.160968"/>
+</kw>
+<status status="PASS" start="2025-10-23T10:06:36.173262" elapsed="0.163127"/>
 </kw>
 <kw name="Fechar Navegador" owner="global" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-21T21:10:17.978479" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T10:06:36.839252" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-21T21:10:17.807856" elapsed="0.170886"/>
+<status status="PASS" start="2025-10-23T10:06:36.343729" elapsed="0.495784"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-21T21:10:17.979138" elapsed="2.491518"/>
+<status status="PASS" start="2025-10-23T10:06:36.840028" elapsed="4.169805"/>
 </kw>
-<status status="PASS" start="2025-10-21T21:10:17.807235" elapsed="2.663668"/>
+<status status="PASS" start="2025-10-23T10:06:36.342785" elapsed="4.667304"/>
 </kw>
-<tag>Compra</tag>
-<status status="PASS" start="2025-10-21T21:10:01.681418" elapsed="18.789988"/>
+<tag>Carrinho</tag>
+<status status="PASS" start="2025-10-23T10:06:21.105233" elapsed="19.905372"/>
 </test>
-<status status="PASS" start="2025-10-21T21:09:59.640301" elapsed="20.833386"/>
+<status status="PASS" start="2025-10-23T10:06:19.285278" elapsed="21.727208"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Compra</stat>
+<stat pass="1" fail="0" skip="0">Carrinho</stat>
 </tag>
 <suite>
 <stat name="Serverest" id="s1" pass="1" fail="0" skip="0">Serverest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-21T21:10:00.570579" level="WARN">Imported library 'C:\serverest\testresource\pageobjects\serverest_po.py' contains no keywords.</msg>
+<msg time="2025-10-23T10:06:20.109216" level="WARN">Imported library 'C:\serverest\testresource\pageobjects\serverest_po.py' contains no keywords.</msg>
 </errors>
 </robot>
