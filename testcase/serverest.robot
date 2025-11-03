@@ -73,3 +73,17 @@ CN02_CT07 - Adicionar oa carrinho
     AND adicionar na lista de compra 
     AND o sistema apresenta a lista de compras
     THEN adicionar oa carrinho de compras
+CN02_CT08 - Sair da pagina de compras 
+    [Tags]    Logout
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto
+    AND adicionar na lista de compra
+    THEN fazer logout da pagina
+
+CN02_CT08 - Sair da pagina de compras para pagina inicial 
+    [Tags]    Inicial
+    GIVEN que faço login no sistema     ${PERFIL.CLIENTE}
+    WHEN pesquiso um produto
+    AND adicionar na lista de compra
+    THEN voltar a página inicial 
+    

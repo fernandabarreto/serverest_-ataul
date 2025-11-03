@@ -1,0 +1,11 @@
+Atualização do projeto 
+git init
+git status
+git add . 
+git status
+git commit -m "atualização de produto" 
+git push -u origin main
+
+Rodar: 
+$ robot -d results testcase/serverest.robot
+$ robot -d results -i Logout testcase/serverest.robot

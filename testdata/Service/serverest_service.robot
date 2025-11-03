@@ -31,7 +31,7 @@ pesquiso um produto
     adiciono um dado para a pesquisa
     clicar no botao
 o sistema apresenta o produto pesquisado 
-    validar produto pesquisado       Ergonomic Metal Cheese
+    validar produto pesquisado       Soft Ceramic Tuna
 
 adicionar na lista de compra 
     clicar no botão adicionar na lista 
@@ -42,3 +42,7 @@ aumentar a quantidade de produto na lista
     aumentar a quantidade de produto  
 adicionar oa carrinho de compras 
     adicionar oa carrinho
+fazer logout da pagina
+    logout da pagina 
+voltar a página inicial 
+    página inicial

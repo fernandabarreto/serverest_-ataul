@@ -84,3 +84,8 @@ aumentar a quantidade de produto
 adicionar oa carrinho
     Click Element    ${lista.btnCarrinho}
     
+logout da pagina    
+    Click Element    ${lista.btnLogout}
+
+página inicial
+    Click Element    ${lista.btnPaginaInicial}
